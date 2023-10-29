@@ -4,7 +4,6 @@ import Carousal from '../../../Components/Carousal/Carousal2';
 import axios from 'axios';
 import ServiceCard from '../../../Components/Card/ServiceCard/ServiceCard';
 import ProductCard from '../../../Components/Card/ProductCard/ProductCard';
-import about from '../../../assets/about.png'
 import Marquee from 'react-fast-marquee';
 const Home = () => {
     const[Service,setService]=useState([]);

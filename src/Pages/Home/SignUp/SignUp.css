@@ -1,0 +1,16 @@
+.borderCustom {
+	
+    border: 1px;
+    border-color: darkgrey;
+    
+}
+
+.input:focus, .input:focus-within {
+	outline-style: solid;
+	outline-width: 0;
+	outline-offset: 0;
+    border-color: orangered;
+}
+.unselectedTab {
+    border: none; /* Remove the border when tab is unselected */
+  }
