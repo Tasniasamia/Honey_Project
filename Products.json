@@ -1,0 +1,99 @@
+[
+    {
+        "id": "1",
+        "category": "Honey",
+        "category_bangla": "মধু ",
+        "name": "100 grams Honey Glass Bottle",
+        "name_bangla": "১০০ গ্রাম মধু কাঁচের বোতল",
+        "image": "https://www.solidhoneybd.com/wp-content/uploads/2020/09/%E0%A7%A7%E0%A7%A6%E0%A7%A6-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE-%E0%A6%AE%E0%A6%A7%E0%A7%81-%E0%A6%95%E0%A6%BE%E0%A6%81%E0%A6%9A%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A7%8B%E0%A6%A4%E0%A6%B2-%E0%A5%A4-01-300x225.jpg",
+        "rating": 4.5,
+        "rating_bangla": "৪.৫ ",
+        "price": "100.00",
+        "price_bangla": "১০০.০০"
+      },
+      {
+        "id": "2",
+        "category": "Honey",
+        "category_bangla": "মধু ",
+        "name": "Black Cumin Flower Honey",
+        "name_bangla": "কালোজিরা ফুলের মধু",
+        "image": "https://www.solidhoneybd.com/wp-content/uploads/2013/06/%E0%A6%95%E0%A6%BE%E0%A6%B2%E0%A7%8B%E0%A6%9C%E0%A6%BF%E0%A6%B0%E0%A6%BE-%E0%A6%AB%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%A7%E0%A7%81-%E0%A6%AF%E0%A7%81%E0%A6%97%E0%A6%B2-%E0%A6%AB%E0%A6%9F%E0%A7%8B-01-300x225.jpg",
+        "rating": 4.5,
+        "rating_bangla": "৪.৫ ",
+        "price": "450.00 – ৳ 1,700.00",
+        "price_bangla": "৪৫০.০০ – ৳ ১,৭০০.০০"
+      },
+      {
+        "id": "3",
+        "category": "Honey",
+        "category_bangla": "মধু ",
+        "name": "Lychee Flower Honey",
+        "name_bangla": "লিচু ফুলের মধু",
+        "image": "https://www.solidhoneybd.com/wp-content/uploads/2013/06/%E0%A6%B2%E0%A6%BF%E0%A6%9A%E0%A7%81-%E0%A6%AB%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%A7%E0%A7%81-%E0%A6%AF%E0%A7%81%E0%A6%97%E0%A6%B2-%E0%A6%AB%E0%A6%9F%E0%A7%8B-01-300x225.jpg",
+        "rating": 4.5,
+        "rating_bangla": "৪.৫ ",
+        "price": "250.00 – ৳ 900.00",
+        "price_bangla": "২৫০.০০ – ৳ ৯০০.০০"
+      },
+      {
+        "id": "4",
+        "category": "Honey",
+        "category_bangla": "মধু ",
+        "name": "Mustard Flower Honey",
+        "name_bangla": "সরিষা ফুলের মধু",
+        "image": "https://www.solidhoneybd.com/wp-content/uploads/2013/06/%E0%A6%B8%E0%A6%B0%E0%A6%BF%E0%A6%B7%E0%A6%BE-%E0%A6%AB%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%A7%E0%A7%81-%E0%A6%AF%E0%A7%81%E0%A6%97%E0%A6%B2-%E0%A6%AB%E0%A6%9F%E0%A7%87%E0%A6%BE-01-01-300x225.jpg",
+        "rating": 5,
+        "rating_bangla": "৫",
+        "price": "200.00 – ৳ 800.00",
+        "price_bangla": "২০০.০০ – ৳ ৮০০.০০"
+      },
+      {
+        "id": "5",
+        "category": "Others",
+        "category_bangla": "অন্যান্য ",
+        "name": "Solid Black Cumin",
+        "name_bangla": "সলিড কালোজিরা",
+        "image": "https://www.solidhoneybd.com/wp-content/uploads/2020/09/%E0%A6%95%E0%A6%BE%E0%A6%B2%E0%A7%8B%E0%A6%9C%E0%A6%BF%E0%A6%B0%E0%A6%BE-2-01-01-300x225.jpg",
+        "rating": 0,
+        "rating_bangla": "০",
+        "price": "140.00",
+        "price_bangla": "১৪০.০০"
+      },
+
+      {
+        "id": "6",
+        "category": "Oil",
+        "category_bangla": "তেল",
+        "name": "Solid Black Cumin Oil",
+        "name_bangla": "সলিড কালোজিরার তেল",
+        "image": "https://www.solidhoneybd.com/wp-content/uploads/2016/05/Solid-Kalo-Jira-Banner-jugol-01-300x225.jpg",
+        "rating": 0,
+        "rating_bangla": "০",
+        "price": "130.00 – ৳ 220.00",
+        "price_bangla": "১৩০.০০ – ৳ ২২০.০০"
+      },
+      {
+        "id": "7",
+        "category": "Oil",
+        "category_bangla": "তেল",
+        "name": "Solid Mustard Oil",
+        "name_bangla": "সলিড সরিষার তেল",
+        "image": "https://www.solidhoneybd.com/wp-content/uploads/2016/06/01-02-300x225.jpg",
+        "rating": 0,
+        "rating_bangla": "০",
+        "price": "230.00 – ৳ 1,150.00",
+        "price_bangla": "২৩০.০০ – ৳ ১,১৫০.০০"
+      },
+      {
+        "id": "8",
+        "category": "Honey",
+        "category_bangla": "মধু ",
+        "name": "Sundarbans Honey",
+        "name_bangla": "Sundarbans Honey",
+        "image": "https://www.solidhoneybd.com/wp-content/uploads/2013/06/%E0%A6%B8%E0%A7%81%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%B0%E0%A6%AC%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%96%E0%A6%BE%E0%A6%81%E0%A6%9F%E0%A6%BF-%E0%A6%AE%E0%A6%A7%E0%A7%81-%E0%A6%AF%E0%A7%81%E0%A6%97%E0%A6%B2-%E0%A6%AB%E0%A6%9F%E0%A7%8B-01-1-300x225.jpg",
+        "rating": 5,
+        "rating_bangla": "৫",
+        "price": "350.00 – ৳ 1,300.00",
+        "price_bangla": "৩৫০.০০ – ৳ ১,৩০০.০০"
+      }
+]
