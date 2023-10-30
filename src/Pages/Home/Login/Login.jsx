@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Login.css'
 import logo from '../../../assets/sign_logo.png';
 import { Link } from 'react-router-dom';
+import { AuthData } from '../../Shared/AuthProvider/AuthProvider';
 const  Login= () => {
+    const {car,signUp,login,user,setUser,loading,setLoading,getName}=useContext(AuthData);
+    const handleUser=(event)=>{
+    event.preventDefault();
+    const email=event.target.email.value;
+    const password=event.target.password.value;
+    
+        login( email, password).then((userCredential) => {
+        const user = userCredential.user;
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+        });
+    }
     return (
        <div className='lg:flex flex-column gap-6 justify-between items-center'>
 <div className='lg:block md:block hidden'><img src="https://img.freepik.com/free-photo/fresh-honeycombs_144627-17377.jpg?size=626&ext=jpg&ga=GA1.1.617391450.1698571397&semt=ais" alt="honey"/></div>
@@ -11,7 +26,7 @@ const  Login= () => {
        <p className='text-6xl font-bold text-orange-400 text-center mt-4 mb-2'>Welcome!</p>
        <p className='text-2xl text-[#f4da8a] text-center'>Login into your account</p></div>
 
-      <form className="card-body">
+      <form className="card-body"onSubmit={handleUser}>
        
         <div className="form-control">
           <label className="label">

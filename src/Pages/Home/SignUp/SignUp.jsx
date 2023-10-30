@@ -1,11 +1,94 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './SignUp.css';
 import logo from '../../../assets/sign_logo.png';
 import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { AuthData } from '../../Shared/AuthProvider/AuthProvider';
 const  SignUp= () => {
     const [tabIndex, setTabIndex] = useState(0);
+    const[photos,setPhoto]=useState(null)
+    const {car,signUp,login,user,setUser,loading,setLoading,getName,logOut}=useContext(AuthData);
+    console.log(car)
+
+    const handleUserData=(event)=>{
+        event.preventDefault()
+        const name=event.target.name.value;
+        const email=event.target.email.value;
+        const password=event.target.password.value;
+        const number=event.target.number.value;
+        const nid=event?.target?.nid?.value;
+        const location=event?.target?.location;
+        const photo=event.target.image.files[0]
+        const formData=new FormData();
+        formData.append('image',photo)
+        fetch(`https://api.imgbb.com/1/upload?key=392c6501cc4955e873764521bd71a665`, {
+            method: "POST",
+            body: formData
+        })
+        .then((res) => res.json()) // Fixed this line
+        .then((data) => {
+            console.log(data.data.url);
+            setPhoto(data.data.url);
+        })
+        signUp(email,password).then((cretential)=>{
+       
+        getName(name,photos).then(()=>{ 
+            const user=cretential.user;
+            console.log(user);
+            logOut();
+        })
+        
+        .catch((error)=>{console.log(error.message)})
+      
+        })
+        .catch((error)=>{
+            console.log(error.message)
+        })
+        // console.log(formData)
+        // console.log(photo);
+        // console.log(formData)
+
+    }
+    const handleUserData2=(event)=>{
+      event.preventDefault()
+      const name=event.target.name.value;
+      const email=event.target.email.value;
+      const password=event.target.password.value;
+      const number=event.target.number.value;
+      const nid=event?.target?.nid?.value;
+      const location=event?.target?.location;
+      const photo=event.target.image.files[0]
+      const formData=new FormData();
+      formData.append('image',photo)
+      fetch(`https://api.imgbb.com/1/upload?key=392c6501cc4955e873764521bd71a665`, {
+          method: "POST",
+          body: formData
+      })
+      .then((res) => res.json()) // Fixed this line
+      .then((data) => {
+          console.log(data.data.url);
+          setPhoto(data.data.url);
+      })
+      signUp(email,password).then((cretential)=>{
+     
+      getName(name,photos).then(()=>{ 
+          const user=cretential.user;
+          console.log(user);
+          logOut();
+      })
+      
+      .catch((error)=>{console.log(error.message)})
+    
+      })
+      .catch((error)=>{
+          console.log(error.message)
+      })
+      // console.log(formData)
+      // console.log(photo);
+      // console.log(formData)
+
+  }
     return (
        <div className='w-full my-20'>
   <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)} className={'border-0 border-white'}>
@@ -22,7 +105,7 @@ Sign Up  as a Beekeeper</Tab>
        <p className='text-6xl font-bold text-orange-400 text-center mt-4 mb-2'>Welcome!</p>
        <p className='text-2xl text-[#f4da8a] text-center'>Create User Account</p></div>
 
-      <form className="card-body">
+      <form className="card-body"onSubmit={handleUserData}>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Username</span>
@@ -64,12 +147,16 @@ Sign Up  as a Beekeeper</Tab>
 
     </div>
     </TabPanel>
+
+
+
+
       <TabPanel className={' '}> <div className="py-10 mx-auto card flex-shrink-0 w-full lg:max-w-xl max-w-sm shadow-2xl bg-base-100">
        <div className='mt-10'><div className='flex justify-center'><img src={logo} style={{height:"100px",width:"100px"}} alt="logo"/></div> 
        <p className='text-6xl font-bold text-orange-400 text-center mt-4 mb-2'>Welcome!</p>
        <p className='text-2xl text-[#f4da8a] text-center'>Create BeeKeeper Account</p></div>
 
-      <form className="card-body">
+      <form className="card-body"onSubmit={handleUserData2}>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Username</span>

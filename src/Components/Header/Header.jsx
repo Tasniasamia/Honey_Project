@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../assets/honey_logo.png'
 import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
+import { AuthData } from '../../Pages/Shared/AuthProvider/AuthProvider';
 const Header = () => {
+  const {car,signUp,login,user,setUser,loading,setLoading,getName,logOut}=useContext(AuthData);
+
   const navitem = (<>
     <li><NavLink to={`/`} className={({ isActive }) =>isActive? "isactive": ""}>Home</NavLink></li>
     <li><NavLink to={`/blog`} className={({ isActive }) =>isActive? "isactive": ""}>Blog</NavLink></li>
@@ -35,8 +38,10 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-      
-        <NavLink to={`/login`} className={({ isActive }) =>isActive? "isactive": ""}>Login</NavLink>
+        {
+          user ? <button className='btn bg-amber-400 text-white'onClick={logOut}>LogOut</button>:        <NavLink to={`/login`} className={({ isActive }) =>isActive? "isactive": ""}>Login</NavLink>
+
+        }
         </div>
       </div>
     );
